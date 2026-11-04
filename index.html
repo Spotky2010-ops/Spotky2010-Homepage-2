@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scrollbar.css">
+
+    <title>Spotky2010's Homepage 2</title>
+
+    <script src="js/Element.js"></script>
+    <script src="js/command.js"></script>
+    <script src="js/folders.js"></script>
+    <script src="js/contents.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body onload="loadApp()">
+    <div id="app" style="display: none; position: relative;">
+        <div class="main-files" id="main_files_table"></div>
+        <div id="folder-div">
+            <div class="folder-title">
+                <span id="folder_title">Folder</span>
+                <button class="btn-primary" onclick="closeFolder()">X</button>
+            </div><div class="folder-table-div">
+                <div id="folder_table">
+
+                </div>
+            </div>
+        </div>
+        <div id="image-div">
+            <div class="folder-title">
+                <span id="image_title">Folder</span>
+                <button class="btn-primary" onclick="closeImage()">X</button>
+            </div><div class="folder-table-div">
+                <img id="img-selected">
+            </div>
+        </div>
+        <div id="cmd-div">
+            <div class="folder-title">
+                <span id="image_title">Command Prompt</span>
+                <button class="btn-primary" onclick="tmp.el['cmd-div'].setDisplay(false)">X</button>
+            </div><div class="folder-table-div">
+                <div id="command_outputs"></div>
+                <input id="command_input" type="text" placeholder="Type Command to Run. (Click here first to type)">
+            </div>
+        </div>
+        <div id="navbar-bottom">
+            <div id="time">12:34:56</div>
+        </div>
+    </div>
+</body>
+</html>
